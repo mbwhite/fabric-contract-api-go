@@ -1,7 +1,9 @@
 # Copyright the Hyperledger Fabric contributors. All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
 
-name: fabric-chaincode-go
+
+name: fabric-contract-api-go
+
 
 on:
   pull_request:
@@ -21,6 +23,7 @@ jobs:
       with:
         fetch-depth: 1
         clean: true
+
     - name: install Tools
       run: |
         pushd ci/tools
