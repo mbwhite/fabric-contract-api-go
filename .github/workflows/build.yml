@@ -1,16 +1,14 @@
 # Copyright the Hyperledger Fabric contributors. All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
 
-
 name: fabric-contract-api-go
-
 
 on:
   pull_request:
     branches:
     - main
     - release-*
-
+  workflow_dispatch:
 
 jobs:
   build:
@@ -50,4 +48,3 @@ jobs:
 
     - run: .azure-pipelines/scripts/tutorial-checks.sh
       name: Check tutorial contents                    
-
